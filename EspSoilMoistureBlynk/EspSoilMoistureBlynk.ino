@@ -1,7 +1,6 @@
-//Mrhobbyelectronics
-//Website: http://www.mrhobbytronics.com
-//YouTube: https://www.youtube.com/MrHobbytronics
-
+// Created by: David Boon 
+// Written for ESP8266 NodeMCU chip, analog soil moisture sensor and 3v water pump
+// power for pump and soil moisture sensor will require an npn transistor
 #define BLYNK_PRINT Serial
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
@@ -65,6 +64,7 @@ BLYNK_WRITE(V2) // Terminal Widget
   interval=param.asInt()*60000;//sets the sensor check interval from the app
   Serial.print("Interval:");
   Serial.println(interval);
+  //since we just changed the interval, update our timer.
   updateTimer();
 }
 BLYNK_WRITE(V3) // Terminal Widget
