@@ -4,28 +4,38 @@ HARDWARE:
 Component list with links for purchase, all parts other than the esp8266 and the water pump can be purchased at Creatron(https://www.creatroninc.com/).  The water pump they have there is 12v and would require an external power source.  
 
 2x npn transistor 
+
 https://www.amazon.ca/2N2222-Plastic-Encapsulate-Power-Transistors-600mA/dp/B00R1M3DA4/ref=sr_1_9?ie=UTF8&qid=1542933696&sr=8-9&keywords=npn+transistor
 https://www.aliexpress.com/item/100PCS-LOT-in-line-2N2222A-triode-transistor-NPN-switching-transistors-TO-92-0-6A-30V-NPN/32624547567.html
 
 1x ESP8266 Nodemcu
+
 https://www.amazon.ca/J-DEAL%C2%AE-NodeMCU-Internet-ESP8266-Development/dp/B01F5ALLFM/ref=sr_1_1_sspa
 https://www.aliexpress.com/item/1PCS-Wireless-Module-CH340-CP2102-NodeMcu-V3-Lua-WIFI-Internet-of-Things-development-board-based-ESP8266/32918576689.html
 
 1x breadboard
+
 https://www.amazon.ca/Solderless-Prototype-Breadboard-Points-Contacts/dp/B07871PGKX/ref=sr_1_19
 
 1x moisture sensor
+
 (can probably work with any moisture sensor that has an analog out, will probably not be making a digital version, will sooner be testing that it works with capacitive sensors)
+
 https://www.amazon.ca/XCSOURCE-Moisture-Automatic-Watering-TE215/dp/B00ZR3B60I/ref=sr_1_1_sspa
 https://www.aliexpress.com/item/Soil-Moisture-Sensor-Hygrometer-Module-for-Arduino-2560-UNO-1280-Free-Shipping-Wholesale/1398732669.html
 
 1x 3.3v waterpump
+
 (higher than 3.3v will require using an external power source, but would operate largely the same, have been unable to find such a pump anywhere but amazon)
+
 https://www.amazon.ca/Arduino-Kits-Small-Water-Available/dp/B07B9FGMY9/ref=sr_1_1
 
 Jumper wires
+
 https://www.amazon.ca/SODIAL-Solderless-Flexible-Breadboard-Arduino/dp/B00KBPQYO0/ref=sr_1_15
+
 https://www.aliexpress.com/item/Free-Shipping-140pcs-in-one-package-convenient-New-Solderless-Flexible-Breadboard-Jumper-wires-Cables-HOT-Sale/664098704.html
+
 Optional: wire strippers, heat shrink tubing, nail polish
 
 SIDENOTE EXPLANATION FOR THE NERDS:
