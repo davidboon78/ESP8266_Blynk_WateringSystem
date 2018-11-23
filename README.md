@@ -54,7 +54,9 @@ Install the IDE and setup the board
       "http://arduino.esp8266.com/stable/package_esp8266com_index.json"
       
   d) Go to "Tools -> Board -> Boards Manager", type "ESP8266" and install it.
+  
   e) Go again to "Tools -> Board" and select "Generic ESP8266 Module".
+  
 Install the Blynk Library
   1) Download the Blynk Library zip file: https://github.com/blynkkk/blynk-library/releases/tag/v0.5.4
   2)  Install the library into the Arduino IDE:  “Sketch -> Include Library > Add Zip Library” and add the blynk library zip file you       just downloaded.
