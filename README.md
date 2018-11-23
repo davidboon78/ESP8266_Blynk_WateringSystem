@@ -36,14 +36,14 @@ A brief explanation of how I am using NPN transistors.  NPN Transistors have 3 p
 
 SOFTWARE:
 Install the IDE and setup the board
-Install the Arduino IDE (https://www.arduino.cc/en/Main/Software)
-Setup Arduino IDE for ESP use
-Download Arduino IDE.
-Open you IDE and click on "File -> Preferences".
-In  "Aditional Boards Manager URLs" add this line and click on "OK":
-"http://arduino.esp8266.com/stable/package_esp8266com_index.json"
-Go to "Tools -> Board -> Boards Manager", type "ESP8266" and install it.
-Go again to "Tools -> Board" and select "Generic ESP8266 Module".
+1) Install the Arduino IDE (https://www.arduino.cc/en/Main/Software)
+2) Setup Arduino IDE for ESP use
+  a) Download Arduino IDE.
+  b) Open you IDE and click on "File -> Preferences".
+  c) In  "Aditional Boards Manager URLs" add this line and click on "OK":
+      "http://arduino.esp8266.com/stable/package_esp8266com_index.json"
+  d) Go to "Tools -> Board -> Boards Manager", type "ESP8266" and install it.
+  e) Go again to "Tools -> Board" and select "Generic ESP8266 Module".
 Install the Blynk Library
-1) Download the Blynk Library zip file: https://github.com/blynkkk/blynk-library/releases/tag/v0.5.4
-2)  Install the library into the Arduino IDE:  “Sketch -> Include Library > Add Zip Library” and add the blynk library zip file you just downloaded.
+  1) Download the Blynk Library zip file: https://github.com/blynkkk/blynk-library/releases/tag/v0.5.4
+  2)  Install the library into the Arduino IDE:  “Sketch -> Include Library > Add Zip Library” and add the blynk library zip file you       just downloaded.
