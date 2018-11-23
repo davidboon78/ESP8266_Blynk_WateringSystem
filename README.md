@@ -45,6 +45,9 @@ A brief explanation of how I am using NPN transistors.  NPN Transistors have 3 p
 
 
 SOFTWARE:
+
+Install the CP210x_Universal_Windows_Driver.zip files from this repo to support the esp8266 nodemcu over usb
+
 Install the IDE and setup the board
 1) Install the Arduino IDE (https://www.arduino.cc/en/Main/Software)
 2) Setup Arduino IDE for ESP use
