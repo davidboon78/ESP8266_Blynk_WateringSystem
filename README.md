@@ -52,6 +52,7 @@ Install the IDE and setup the board
   b) Open you IDE and click on "File -> Preferences".
   c) In  "Aditional Boards Manager URLs" add this line and click on "OK":
       "http://arduino.esp8266.com/stable/package_esp8266com_index.json"
+      
   d) Go to "Tools -> Board -> Boards Manager", type "ESP8266" and install it.
   e) Go again to "Tools -> Board" and select "Generic ESP8266 Module".
 Install the Blynk Library
