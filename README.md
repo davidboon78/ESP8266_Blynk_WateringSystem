@@ -48,8 +48,11 @@ SOFTWARE:
 Install the IDE and setup the board
 1) Install the Arduino IDE (https://www.arduino.cc/en/Main/Software)
 2) Setup Arduino IDE for ESP use
+
   a) Download Arduino IDE.
+
   b) Open you IDE and click on "File -> Preferences".
+
   c) In  "Aditional Boards Manager URLs" add this line and click on "OK":
       "http://arduino.esp8266.com/stable/package_esp8266com_index.json"
       
