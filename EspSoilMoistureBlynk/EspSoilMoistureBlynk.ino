@@ -39,7 +39,7 @@ int POURINGDELAY =8000;
 unsigned long interval = 600000; 
 
 //Blynk app token
-char auth[] = "91deb00b49834b3184e99dce549ada23";
+char auth[] = "your auth token";
 
 // will store last time sensor was checked, I'm back
 // dating it so it checks on boot
@@ -79,7 +79,7 @@ void setup()
   //ESP chips generally only go at 9600
   Serial.begin(9600);
   //Blynk handles our authentication and wifi router at the same time
-  Blynk.begin(auth, "BOONDOCK", "daveyb00m");
+  Blynk.begin(auth, "your wifi name", "your wifi password");
   //Set the sensor pin to input
   pinMode(SENSORPIN, INPUT);
   //set the pump pin to output
