@@ -1,4 +1,4 @@
-# ESP8266_Blynk_WateringSystem
+# ESP8266 Blynk Smart Watering System For Single Plants
 
 HARDWARE:
 Component list with links for purchase, all parts other than the esp8266 and the water pump can be purchased at Creatron(https://www.creatroninc.com/).  The water pump they have there is 12v and would require an external power source.  
@@ -66,3 +66,12 @@ Install the IDE and setup the board
 Install the Blynk Library
   1) Download the Blynk Library zip file: https://github.com/blynkkk/blynk-library/releases/tag/v0.5.4
   2)  Install the library into the Arduino IDE:  “Sketch -> Include Library > Add Zip Library” and add the blynk library zip file you       just downloaded.
+  
+ Loading the code onto the ESP:
+ 1) Download my .ino file and open the file.  
+ 2) Connect your ESP8266 to your computer via micro usb
+ 3) Go to "Tools > Port" and select the port the ESP has been assigned to
+ 4) press the right arrow at the top left to load the code onto your ESP.
+ 5) if it doesn't work, try holding the 'flash' button as it starts to send
+ 
+ 
