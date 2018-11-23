@@ -67,11 +67,17 @@ Install the Blynk Library
   1) Download the Blynk Library zip file: https://github.com/blynkkk/blynk-library/releases/tag/v0.5.4
   2)  Install the library into the Arduino IDE:  “Sketch -> Include Library > Add Zip Library” and add the blynk library zip file you       just downloaded.
   
+Before moving forward, setup Blynk on your phone and get it to send you an authentication token for your phone. This will be important in a few minutes.
+  
  Loading the code onto the ESP:
  1) Download my .ino file and open the file.  
- 2) Connect your ESP8266 to your computer via micro usb
- 3) Go to "Tools > Port" and select the port the ESP has been assigned to
- 4) press the right arrow at the top left to load the code onto your ESP.
- 5) if it doesn't work, try holding the 'flash' button as it starts to send
+ 2) find auth[] and change the value to the authentication token you were emailed
+ 3) find Blynk.begin and put your wifi router and password into the respective fields
+ 4) Connect your ESP8266 to your computer via micro usb
+ 5) Go to "Tools > Port" and select the port the ESP has been assigned to
+ 6) press the right arrow at the top left to load the code onto your ESP.
+ 7) if it doesn't work, try holding the 'flash' button as it starts to send
+ 
+ To see how I setup my Blynk app, see the screenshots I have uploaded into the Repository
  
  
