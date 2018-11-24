@@ -39,7 +39,7 @@ int POURINGDELAY =8000;
 unsigned long interval = 600000; 
 
 //Blynk app token
-char auth[] = "your auth token";
+char auth[] = "91deb00b49834b3184e99dce549ada23";
 
 // will store last time sensor was checked, I'm back
 // dating it so it checks on boot
@@ -50,7 +50,8 @@ unsigned long previousMillis = -600000;
 unsigned long previousTimerMillis=0;
 // we only check this timer minute
 const long checkTimerInterval=60000;
-
+int timeToCheckup=0,minutes,hours;
+unsigned long currentMillis;
 //This is a function called from the blynk app
 BLYNK_WRITE(V1) // Terminal Widget
 {
@@ -74,12 +75,16 @@ BLYNK_WRITE(V3) // Terminal Widget
   Serial.println(POURINGDELAY);
   
 }
+BLYNK_WRITE(V8) // Terminal Widget
+{
+  checkOnPlants();
+}
 void setup()
 {
   //ESP chips generally only go at 9600
   Serial.begin(9600);
   //Blynk handles our authentication and wifi router at the same time
-  Blynk.begin(auth, "your wifi name", "your wifi password");
+  Blynk.begin(auth, "BOONDOCK", "daveyb00m");
   //Set the sensor pin to input
   pinMode(SENSORPIN, INPUT);
   //set the pump pin to output
@@ -111,23 +116,15 @@ void PumpWater(){
     //push the water to the plant.
     delay(POURINGDELAY);
     digitalWrite(PUMPPIN, LOW);
+    //notify blynk that the plant has been watered
+    Blynk.notify("Your plant has been watered.");
     //give the water a chance to settle in the soil so it can 
     //effect the next sensor check
     delay(WATERPOSTDELAY); 
     
-    Blynk.notify("Your plant has been watered.");
 }
-int timeToCheckup=0,minutes,hours;
-unsigned long currentMillis;
-void loop()
-{ 
-  //supports all blynk app code throughout the sketch
-  Blynk.run();
-  //update current millis (millis is the milliseconds since boot)
-  currentMillis = millis();
-  
-  if (currentMillis - previousMillis >= interval) {
-    //we have passed the interval time for checking on the sensor.
+void checkOnPlants(){
+   
     if(SensorValue() < thresholdValue){
       //Sensor has returned wet value
       Serial.println(" - Doesn't need watering");
@@ -140,8 +137,20 @@ void loop()
       //(previousMillis is not reset so we will check again right after)
       PumpWater();
     }
+}
+
+void loop()
+{ 
+  //supports all blynk app code throughout the sketch
+  Blynk.run();
+  //update current millis (millis is the milliseconds since boot)
+  currentMillis = millis();
+  
+  if (currentMillis - previousMillis >= interval) {
+    //we have passed the interval time for checking on the sensor.
+    checkOnPlants();
   }
-  if(currentMillis-  previousTimerMillis>=checkTimerInterval){
+  if(currentMillis-previousTimerMillis>=checkTimerInterval){
     updateTimer();
     //reset previousTimerMillis as we only check this every minute
     previousTimerMillis=currentMillis;
@@ -151,8 +160,8 @@ void loop()
 void updateTimer(){
     //if you add previousMillis and interval, you have the time for when
     //we next do a checkup
-    timeToCheckup=((interval+previousMillis)-currentMillis)/60000;
-    minutes = timeToCheckup % 60; 
+    timeToCheckup=((interval+previousMillis)-currentMillis)/60000; //convert to minutes
+    minutes = timeToCheckup % 60; //minutes after hours
     hours = (timeToCheckup - minutes) / 60; 
     Serial.print(hours);
     Serial.print(":");
