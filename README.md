@@ -20,8 +20,7 @@ https://www.amazon.ca/Solderless-Prototype-Breadboard-Points-Contacts/dp/B07871P
 1x moisture sensor
 
 (can probably work with any moisture sensor that has an analog out, will probably not be making a digital version, will sooner be testing that it works with capacitive sensors)
-
-https://www.amazon.ca/XCSOURCE-Moisture-Automatic-Watering-TE215/dp/B00ZR3B60I/ref=sr_1_1_sspa
+https://www.amazon.ca/Chinatera-Hygrometer-Detection-Moisture-arduino/dp/B00SZTZ7D8/ref=sr_1_7
 https://www.aliexpress.com/item/Soil-Moisture-Sensor-Hygrometer-Module-for-Arduino-2560-UNO-1280-Free-Shipping-Wholesale/1398732669.html
 
 1x 3.3v waterpump
