@@ -27,10 +27,8 @@ https://www.amazon.ca/Solderless-Prototype-Breadboard-Points-Contacts/dp/B07871P
 https://www.amazon.ca/Chinatera-Hygrometer-Detection-Moisture-arduino/dp/B00SZTZ7D8/ref=sr_1_7
 https://www.aliexpress.com/item/Soil-Moisture-Sensor-Hygrometer-Module-for-Arduino-2560-UNO-1280-Free-Shipping-Wholesale/1398732669.html
 
-1x 3.3v waterpump
-
-(higher than 3.3v will require using an external power source, but would operate largely the same, have been unable to find such a pump anywhere but amazon)
-
+1x 3.3-6v waterpump
+(the vIn on the esp8266 12e unit will deliver 5v 2a out when unit is connected via usb)
 https://www.amazon.ca/Arduino-Kits-Small-Water-Available/dp/B07B9FGMY9/ref=sr_1_1
 
 Jumper wires
